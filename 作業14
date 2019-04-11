@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(void) {
+	
+	int a,b,c;
+	
+	printf("輸入三角形三邊長\n");
+	printf("a="); scanf("%d",&a);
+	printf("b="); scanf("%d",&b);
+	printf("c="); scanf("%d",&c);
+	
+	
+    if( (a+b) <= c ){
+    	printf("不可圍成三角形。"); 
+	}
+	else if( (a+c) <= b && (b>>a>>c || b>>c>>a)){
+	    printf("不可圍成三角形。"); 
+	}
+	else if( (b+c) <= a ){
+	    printf("不可圍成三角形。"); 
+	}	
+	else{
+		printf("可以圍成三角形。");
+	} 
+	printf("\n");
+	system("pause");
+	return 0;
+}
